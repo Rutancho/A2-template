@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Lego Collection</title>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">
+          <a href="/" class="navbar">Lego Collection</a>
+        </h1>
+        <div>
+          <a href="/about" class="mr-4">about</a>
+          <div class="dropdown inline-block relative">
+            <button class="dropdown-button mr-10">theme</button>
+            <div class="dropdown-content hidden absolute">
+              <a href="/lego/sets?theme=technic" class="block">Technic</a>
+              <a href="/lego/sets?theme=classic+town" class="block">Classic Town</a>
+              <a href="/lego/sets?theme=supplemental" class="block">Supplemental</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+<header class = "flex md:justify-center bg-base-20">
+    <h2 class = "text-red-400 text-3xl border-b-4 border-black hero ">Welcome</h2>   
+</header>
+
+    <main class ="bg-gray-300"> 
+        <a href="/lego/sets" class = "flex md:justify-center text-black">GO!</a>
+        <div class="flex md:justify-end">
+            
+            
+      <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 gap-6 p-4"></div>
+  </div>
+</div>
+</div> 
+        <div class="container mx-auto p-4">
+           
+        <div class="flex flex-col md:flex-row justify-center gap-8 mx-auto max-w-7xl">
+            <div class="max-w-md mb-14">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                   <img src="https://cdn.pixabay.com/photo/2016/04/21/16/23/stormtrooper-1343772_1280.jpg" alt="lego1" class="w-full">
+                    <div class="p-4">
+                        <div class="text-2xl font-semibold mb-2">
+                            <span>Lego-1</span>
+                            <p class="text-gray-700 text-base">
+                                A small blurb about the Lego-1 set.
+                            </p>
+                            <a href="/lego/sets/001-1" class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Set</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="max-w-md mb-14">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <!-- Lego-2 이미지 -->
+                <img src="https://cdn.pixabay.com/photo/2019/01/22/14/47/business-3948253_1280.jpg" alt="lego2" class="w-full">
+                <div class="p-4">
+                    <div class="text-2xl font-semibold mb-2">
+                        <span>Lego-2</span>
+                        <p class="text-gray-700 text-base">
+                           Lego hero 
+                        </p>
+                        <a href="/lego/sets/028-1" class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Set</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-md mb-14">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <!-- Lego-2 이미지 -->
+                <img src="https://cdn.pixabay.com/photo/2015/09/09/19/55/toy-932922_1280.jpg" alt="lego3" class="w-full">
+                <div class="p-4">
+                    <div class="text-2xl font-semibold mb-2">
+                        <span>Lego-3</span>
+                        <p class="text-gray-700 text-base">
+                            Lego dark
+                        </p>
+                        <a href="/lego/sets/03093-1" class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Set</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+  // 드롭다운 버튼을 찾아 클릭 이벤트 리스너를 추가
+  document.querySelector('.dropdown-button').addEventListener('click', function() {
+    // 드롭다운 내용을 토글하기 위해 'hidden' 클래스를 추가 또는 제거
+    document.querySelector('.dropdown-content').classList.toggle('hidden');
+  });
+});
+    </script>
+</body>
+</html>
